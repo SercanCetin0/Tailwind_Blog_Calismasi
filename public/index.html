@@ -7,31 +7,41 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
+<body >
   <!--npm run watch-->
 
 
 <!--Header Section-->
 <section>
 <!--Header Container-->
-<div class="container flex space-x-6 justify-between py-12 cursor-default ">
+<div class="container flex space-x-6 justify-between py-12 cursor-default px-10 lg:px-0">
 <!--Logo-->
 <div>
-  <a href="#" class="bg-gradient-to-r from-green-500 to-yellow-300 uppercase bg-clip-text  text-transparent items-center font-bold text-4xl ">Rotam Gezmek</a>
+  <a href="#" class="bg-gradient-to-r from-green-500 to-yellow-300 uppercase bg-clip-text  text-transparent items-center font-bold lg:text-4xl text-lg ">Rotam Gezmek</a>
 </div>
 
 <!--Slogan Container-->
 <div>
-  <p class="font-bold text-lg bg-gradient-to-l from-green-500 py-2 to-yellow-300 bg-clip-text text-transparent items-center ">Yolculuğa Çık, Keşfet, Paylaş: Gezgin Ruhun İzinde!</p>
+  <p class="font-bold  text-sm lg:text-lg bg-gradient-to-l from-green-500 py-2 to-yellow-300 bg-clip-text text-transparent items-center ">Yolculuğa Çık, Keşfet, Paylaş: Gezgin Ruhun İzinde!</p>
 </div>
 
 </div>
 <!--Navbar-->
 <nav class="container flex  justify-between ">
+
+<!--Model Navbar-->
+<div class="block lg:hidden  " >
+  <div class="group space-y-1 cursor-pointer px-10">
+<div class="rounded-full  bg-green-500 group-hover:bg-yellow-300  w-8 h-1"> </div>
+<div class="rounded-full bg-green-500 group-hover:bg-yellow-300  w-8 h-1"> </div>
+<div class="rounded-full bg-green-500 group-hover:bg-yellow-300  w-8 h-1"> </div>
+</div>
+</div>
+
 <!--Menu-->
-  <div class="flex items-center justify-center text-lg space-x-16 uppercase relative px-16 py-2">
+  <div class="lg:flex hidden items-center justify-center text-xl lg:text-lg space-x-6 lg:space-x-16 uppercase relative px-16 py-2">
     <div class="">
-      <a href="#" class="text-green-500 hover:text-yellow-300 hover:border-t-2 hover:border-green-500  transition duration-500 ">Rotam</a>
+      <a href="#" class="text-green-500 hover:text-yellow-300 lg:hover:border-t-2 lg:hover:border-green-500  transition duration-500 ">Rotam</a>
     </div>
     <div class="">
       <a href="#" class="text-green-500 hover:text-yellow-300 hover:border-t-2 hover:border-green-500  transition duration-500 ">Gezi Tüyoları</a>
@@ -52,7 +62,7 @@
     
 
   </div>
-  <div class="flex group">
+  <div class="flex group lg:px-0 px-10">
     <form>
       <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b focus:border-yellow-300 focus:opacity-100 border-green-500 focus:outline-none w-36 transition duration-500" >
       <button class="text-green-500 hover:text-yellow-300 transition duration-500"><i class="fa-solid fa-magnifying-glass "></i></button>
@@ -72,16 +82,11 @@
 
 
 <!--Image Section-->
-<section class=" w-full  my-12">
+<section class="my-12">
 
-
-<div class="  ">
-
-<img src="./images/slider.jpg" alt="slider" class="h-128 w-full object-cover">
-
-
+<div class="w-full lg:h-128 flex     ">
+<img src="./images/slider.jpg" alt="slider" class="lg:h-128  w-full  lg:object-cover ">
 </div>
-
 
 
 </section>
@@ -89,12 +94,12 @@
 
 
 <!--Content Section-->
-<section class="w-5/6 mx-24 my-12 ">
+<section class="lg:w-5/6 w-full px-10 py-6  lg:px-0 lg:py-0 lg:mx-32 lg:my-12 ">
 
   <!--Content-->
   <div class="flex flex-wrap  pt-3 ">
     <!--Content1-->
-    <div class="basis-2/4 group relative overflow-hidden  px-8">
+    <div class="lg:basis-2/4 basis-4/4 pt-3 lg:pt-0 group relative overflow-hidden px-0 lg:px-8  px-8">
       <!--Content Image-->
       <img src="./images/Londra.jpg" alt="Londra" class="object-cover h-full group-hover:cursor-pointer   group-hover:scale-110 relative group-hover:opacity-50 duration-700">
       <!--Content Header-->
@@ -106,7 +111,7 @@
 
 
     </div>
-    <div class="basis-2/4 group relative overflow-hidden px-8 ">
+    <div class="lg:basis-2/4 basis-4/4 pt-10 lg:pt-0 group relative overflow-hidden px-0 lg:px-8 ">
       <!--Content Image-->
       <img src="./images/lyon.jpg" alt="lyon" class="object-cover h-full group-hover:cursor-pointer  group-hover:scale-110 relative group-hover:opacity-50 duration-700">
       <!--Content Header-->
@@ -120,7 +125,7 @@
  
 <div class="flex flex-wrap pt-3">
 
-<div class="basis-2/4 group relative overflow-hidden px-8">
+<div class="lg:basis-2/4 basis-4/4 pt-10 lg:pt-0 group relative overflow-hidden lg:px-8">
 <img src="./images/tokyo.jpg" alt="tokyo" class="object-cover h-full group-hover:cursor-pointer   group-hover:scale-110 relative group-hover:opacity-50 duration-700">
 <div class="absolute px-6 bottom-6 opacity-0 group-hover:opacity-100 group-hover:cursor-pointer  duration-500 py-0 group-hover:py-3 cursor-default">
   <h2 class="text-black font-bold">Tokyo Hatıraları</h2>
@@ -128,8 +133,8 @@
 </div>
 
 </div>
-<div class="basis-1/4 group relative overflow-hidden px-8">
-  <img src="./images/venedik.jpg" alt="venedik" class="object-cover group-hover:cursor-pointer  h-full  group-hover:scale-110 relative group-hover:opacity-50 duration-700">
+<div class="lg:basis-1/4 basis-4/4 pt-10 lg:pt-0 group relative overflow-hidden lg:px-8">
+  <img src="./images/venedik.jpg" alt="venedik" class="object-cover group-hover:cursor-pointer w-full   h-full  group-hover:scale-110 relative group-hover:opacity-50 duration-700">
   <div class="absolute px-6 bottom-6 opacity-0 group-hover:opacity-100 group-hover:cursor-pointer  duration-500 py-0 group-hover:py-3 cursor-default">
     <h2 class="text-black font-bold">Venedik Hatıraları</h2>
     <p class="text-xs py-1 text-wrap"> 
@@ -138,8 +143,8 @@
   </div>
   
   </div>
-  <div class="basis-1/4 group relative overflow-hidden px-8 ">
-    <img src="./images/fransa.jpg" alt="fransa" class="object-cover h-full group-hover:cursor-pointer   group-hover:scale-110 relative group-hover:opacity-50 duration-700">
+  <div class="lg:basis-1/4 basis-4/4 pt-10 lg:pt-0 group relative w-full  overflow-hidden lg:px-8 ">
+    <img src="./images/fransa.jpg" alt="fransa" class="object-cover h-full group-hover:cursor-pointer w-full  group-hover:scale-110 relative group-hover:opacity-50 duration-700">
     <div class="absolute px-6 bottom-6 opacity-0 group-hover:opacity-100 group-hover:cursor-pointer  duration-500 py-0 group-hover:py-3 cursor-default">
       <h2 class="text-black font-bold">Fransa Hatıraları</h2>
       <p class="text-xs py-1 text-wrap">
@@ -161,18 +166,17 @@
  
 <!--Header-->
 <div class="relative">
-  <div class="flex justify-between  flex-wrap ">
-  <div class="basis-2/5"></div>
-  <div class="basis-1/5 ">
-    <a  class= "  cursor-default bg-gradient-to-r from-green-500 to-yellow-300  bg-clip-text  text-transparent  font-bold text-4xl ">Ben Kimim?</a>
-    <hr width="60%" size="10px" >
+  <div class="">
+  
+  <div class="text-center">
+    <a  class= "  cursor-default bg-gradient-to-r from-green-500 to-yellow-300  bg-clip-text  text-transparent  font-bold text-4xl whitespace-nowrap">Ben Kimim?</a>   
   </div>
-  <div class="basis-2/5"></div>
+  
 </div>
 <!--Content -->
-<div class="flex justify-between  flex-wrap pt-10 ">
-  <div class="basis-1/5"></div>
-  <div class="basis-3/5">
+<div class=" pt-10 ">
+  
+  <div class="text-center">
     <p class=" ">&nbsp; &nbsp; &nbsp; &nbsp;Merhaba! Ben <b>Sercan Çetin</b>. Hayatımı maceraya adadım ve dünyayı keşfetmeyi en büyük tutkum olarak  benimsedim. Çeşitli ülkeleri dolaşmak, farklı kültürleri deneyimlemek ve insanlarla bağlantı kurmak benim için yaşamın gerçek zenginliği. </p>
     <br>
     <p>&nbsp; &nbsp; &nbsp; &nbsp; Genç yaşlarımdan itibaren seyahat etmeye başladım ve o günden beri durmadan yeni yerler keşfetmeye devam ediyorum. Her seyahatim beni hem kişisel olarak geliştiriyor hem de dünya hakkında daha fazla şey öğrenmemi sağlıyor</p>
@@ -183,7 +187,7 @@
 
       Hayatımın her anında seyahat etmek ve keşfetmek benim için bir öncelik haline geldi. Gelecekte de dünyanın dört bir yanını gezmeye ve yeni maceralar yaşamaya devam etmeyi dört gözle bekliyorum!</p>
     </div>
-  <div class="basis-1/5"></div>
+  
 </div>
 
 </div>
